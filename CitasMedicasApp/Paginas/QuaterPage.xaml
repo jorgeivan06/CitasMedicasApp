@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CitasMedicasApp.Paginas.QuaterPage"
+             Title="CitasMedicasApp">
+    <StackLayout Padding="20">
+        <Label 
+            Text=""
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label Text="Cita Reservada" FontSize="24" HorizontalOptions="Center" />
+
+
+        <Label x:Name="FechaLabel" FontSize="18" HorizontalOptions="Center" FontFamily="calibri"/>
+
+
+        <Label x:Name="EspecialidadLabel" FontSize="18" HorizontalOptions="Center" FontFamily="calibri"/>
+
+
+        <Label x:Name="MedicoLabel" FontSize="18" HorizontalOptions="Center" FontFamily="calibri"/>
+
+        <Button Text="Aceptar" Clicked="BtnAceptarClicked" 
+                BackgroundColor="Pink"/>
+
+
+        
+        
+        
+        
+        
+        
+        <Button Text="Cancelar" Clicked="BtnCancelarClicked" 
+                BackgroundColor="Pink"/>
+
+
+
+
+
+
+
+
+
+
+    </StackLayout>
+</ContentPage>

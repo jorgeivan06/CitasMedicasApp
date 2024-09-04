@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CitasMedicasApp.Paginas.ThirdPage"
+             Title="CitasMedicasApp">
+
+<StackLayout Padding="20">
+     
+        <Label Text="Fecha de la cita" />
+        <DatePicker x:Name="FechaPicker" />
+
+        <Label Text="Especialidad médica" />
+        <Picker x:Name="EspecialidadPicker">
+            <Picker.Items>
+                <x:String>Seleccione..</x:String>
+                <x:String>Pediatría</x:String>
+                <x:String>Dermatología</x:String>
+                <x:String>Cardiología</x:String>
+                <x:String>Cardiología</x:String>
+                <x:String>Pediatría</x:String>
+                <x:String>Neurología</x:String>
+                <x:String>Dermatología</x:String>
+                <x:String>Oncología</x:String>
+                <x:String>Ginecología</x:String>
+                <x:String>Endocrinología</x:String>
+                <x:String>Oftalmología</x:String>
+                <x:String>Reumatología</x:String>
+                <x:String>Urología</x:String>
+        </Picker.Items>
+        </Picker>
+
+        <Label Text="Médico disponible" />
+        <Picker x:Name="MedicoPicker">
+            <Picker.Items>
+                <x:String>Seleccione..</x:String>
+                <x:String>Dra. Ana López</x:String>
+                <x:String>Dr. Miguel González</x:String>
+                <x:String>Dra. María Fernández</x:String>
+                <x:String>Dr. Juan Pérez</x:String>
+                <x:String>Dra. Ana Gómez</x:String>
+                <x:String>Dr. Carlos Ramírez</x:String>
+                <x:String>Dra. Laura Rodríguez</x:String>
+                <x:String>Dr. Miguel Sánchez</x:String>
+                <x:String>Dra. Sofía Martínez</x:String>
+                <x:String>Dr. Javier López</x:String>
+                <x:String>Dra. Claudia Torres</x:String>
+                <x:String>Dr. Alejandro Díaz</x:String>
+                <x:String>Dra. Patricia Morales</x:String>
+        </Picker.Items>
+        </Picker>
+
+       
+        <Button Text="Reservar Cita" Clicked="BtnReservarClicked"
+                BackgroundColor="Pink"/>
+    </StackLayout>
+
+</ContentPage>

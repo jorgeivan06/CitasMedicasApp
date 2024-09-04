@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CitasMedicasApp.MainPage">
+
+    <StackLayout Padding="20" >
+
+        <Label Text="Tipo de Documetno"  />
+        <Picker x:Name="TipoDocumentoPicker"  >
+            <Picker.Items>
+                <x:String>Selecciona...</x:String>
+                <x:String>Tarjeta De Identidad</x:String>
+                <x:String>Cedula De Ciudadania </x:String>
+                <x:String>Pasaporte</x:String>
+                <x:String>Cedula De Extrangeria</x:String>
+            </Picker.Items>
+        </Picker >
+
+
+        <Label Text="Usuario" Padding="0,20,0,0" />
+        <Entry x:Name="UsuarioEntry" Placeholder="Ingrese su usuario" />
+
+        <Label Text="Contraseña" Padding="0,20,0,0"/>
+        <Entry x:Name="ContrasenaEntry" Placeholder="Ingrese su contraseña" IsPassword="True" Margin="0,0,0,20"/>
+        
+        <Button Text="Iniciar sesión"
+         Clicked="OnIniciarSesionClicked" 
+                BackgroundColor="Pink"/>
+
+
+        <Label Text="¿Olvidaste tu contraseña?" HorizontalOptions="Center" VerticalOptions="EndAndExpand" />
+    </StackLayout>
+</ContentPage>
